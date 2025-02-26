@@ -1,4 +1,3 @@
-#NOT USING
 
 from typesense_client2 import client
 import typesense
@@ -15,6 +14,7 @@ def search_all():
             print(hit['document'])
     except Exception as e:
         print("Error in search_all:", e)
+
 
 
 # Function to filter documents
@@ -45,6 +45,7 @@ def fuzzy_search():
     except Exception as e:
         print("Error in fuzzy_search:", e)
 
+
 # Add more query functions as needed
 def test_query(): 
     try:
@@ -59,3 +60,27 @@ def test_query():
             print(hit['document'])  # Print each matching document
     except Exception as e:
         print("Error searching:", e)
+
+
+# Semantic search
+def semantic_search():
+    try:
+        response = client.multi_search.perform(
+            search_queries={
+                "searches": [
+                    {
+                        "q":"Coomb's test",
+                        "query_by": "Tests,1 line description (20-30 words description),Alias (2-3) - Other name,Risk assessment (3-4)\n\nWhat problems is it taken for?,embedding",
+                        "collection": "products",
+                        "prefix": "false",
+                        "vector_query": "embedding:([], k: 200)",
+                        "exclude_fields": "embedding",
+                        "per_page": 3
+                    }
+                ]
+            },
+            common_params={}
+        )
+        print("Multi-Search Response:", response)
+    except Exception as e:
+        print("Error performing multi-search:", e)
