@@ -1,5 +1,5 @@
 import typesense
-from python_client import *
+#from python_client import *
 from collection_schema import *
 
 #code below runs once - only during creation
