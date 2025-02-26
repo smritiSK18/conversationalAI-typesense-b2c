@@ -18,6 +18,6 @@ Conversational AI for B2C product search using Typesense
 6. query_list.py - list of templates of query definitions
 7. call_query.py - calling queries from the query_list.py
 8. additional - rarely required fuctions
-  1. py_delete_schema.py - to delete any schema
-  2. 
+      1. py_delete_schema.py - to delete any schema
+ 
 
