@@ -1,6 +1,5 @@
-
-from typesense_client2 import client
 import typesense
+from typesense_client2 import *
 
 # Function to search all documents
 def search_all():
