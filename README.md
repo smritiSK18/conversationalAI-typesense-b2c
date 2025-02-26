@@ -22,6 +22,7 @@ Conversational AI for B2C product search using Typesense
 7. **Calling quer(`call_query.py`)** - calling queries from the query_list.py
 8. **Additional functions(`additional`)** - rarely required fuctions
       1. **Delete schema(`py_delete_schema.py`)** - to delete any schema
+      2. **Collection Schema creation(`collection_schema_creation.py`)** - to automatically create schema from dataset(JSON) file
  
 
 
