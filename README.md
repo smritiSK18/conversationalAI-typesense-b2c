@@ -1,6 +1,7 @@
 # ai-typesense-b2c
 Conversational AI for B2C product search using Typesense
 
+
 ## Overview :
 * python client
 * data in - JSON file
@@ -9,7 +10,9 @@ Conversational AI for B2C product search using Typesense
 * conversion to embeddings using “all-MiniLM-L12-v2” - transformer based sentence embedding model
 <br/>
 
+
 ## Components :
+
 1. **Python Client (`python_client.py`)** -creating a python client to typesense server in local
 2. **Collection Schema (`collection_schema.py`)** - definig the schema of our collection. Manually done since the dataset had duplicate column headings
 3. **Creating collection(`create_collection.py`)** - creating a collection object of any existing schema
@@ -20,4 +23,7 @@ Conversational AI for B2C product search using Typesense
 8. **Additional functions(`additional`)** - rarely required fuctions
       1. **Delete schema(`py_delete_schema.py`)** - to delete any schema
  
+
+
+
 
