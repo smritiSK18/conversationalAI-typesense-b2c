@@ -10,14 +10,14 @@ Conversational AI for B2C product search using Typesense
 <br/>
 
 ## Components :
-1. __ Python Client (`python_client.py`) __-creating a python client to typesense server in local
-3. __ Collection Schema (`collection_schema.py`) __- definig the schema of our collection. Manually done since the dataset had duplicate column headings
-4. __ Creating collection(`create_collection.py`) __- creating a collection object of any existing schema
-5. __ Dataset (`diagnostic_dataset_new.json`) __- dataset contiaing all test data
-6. __ Uploading data(`document_upload.py`) __- uploading dataset data to collection object
-7. __ List of queries (`query_list.py`) __- list of templates of query definitions
-8. __ Calling quer(`call_query.py`) __- calling queries from the query_list.py
-9. __(`additional`) __- rarely required fuctions
-      1. __(`py_delete_schema.py`) __- to delete any schema
+1. **Python Client (`python_client.py`)** -creating a python client to typesense server in local
+2. **Collection Schema (`collection_schema.py`)** - definig the schema of our collection. Manually done since the dataset had duplicate column headings
+3. **Creating collection(`create_collection.py`)** - creating a collection object of any existing schema
+4. **Dataset (`diagnostic_dataset_new.json`)** - dataset contiaing all test data
+5. **Uploading data(`document_upload.py`)** - uploading dataset data to collection object
+6. **List of queries (`query_list.py`)** - list of templates of query definitions
+7. **Calling quer(`call_query.py`)** - calling queries from the query_list.py
+8. **Additional functions(`additional`)** - rarely required fuctions
+      1. **Delete schema(`py_delete_schema.py`)** - to delete any schema
  
 
